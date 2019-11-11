@@ -15,7 +15,8 @@
 }
 
 body {
-  background: #070506 url("/img/main-bg.png") no-repeat;
+  background: #070506 url("/img/main-bg.png") top right -100% no-repeat;
+  background-size: contain;
   background-attachment: fixed;
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -200,7 +201,9 @@ body {
   width: 32px;
   height: 32px;
   border: none;
+  margin-right: 15px;
   background: transparent url("/img/arrow-left.svg") no-repeat center;
+  cursor: pointer;
 }
 
 .slider__nav--right {
@@ -208,4 +211,43 @@ body {
   height: 32px;
   border: none;
   background: transparent url("/img/arrow-right.svg") no-repeat center;
+  cursor: pointer;
+}
+
+.slider__nav--left span,
+.slider__nav--right span {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .hero__subtitle {
+    font-size: 26px;
+  }
+
+  .hero__title {
+    font-size: 36px;
+    line-height: 120%;
+  }
+
+  .hero__desription {
+    font-size: 16px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header__logo {
+    margin-bottom: 30px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav__link {
+    margin-bottom: 10px;
+  }
 }
