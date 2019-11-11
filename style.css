@@ -195,3 +195,17 @@ body {
 .star-o {
   background: url("/img/star-b.svg") no-repeat center;
 }
+
+.slider__nav--left {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent url("/img/arrow-left.svg") no-repeat center;
+}
+
+.slider__nav--right {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent url("/img/arrow-right.svg") no-repeat center;
+}
