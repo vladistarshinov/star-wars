@@ -179,3 +179,19 @@ body {
     rgba(64, 101, 255, 0.86)
   );
 }
+
+.slider__rating-label {
+  margin: 12px;
+  margin-left: 12px;
+}
+
+.star {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url("/img/star-w.svg") no-repeat center;
+}
+
+.star-o {
+  background: url("/img/star-b.svg") no-repeat center;
+}
